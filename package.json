@@ -1,0 +1,20 @@
+{
+  "name": "cypress_accessibility_testing",
+  "version": "1.0.0",
+  "description": "We need to install the lighthouse package to be able to carry out accessibity tests on a page using cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-lighthouse": "^0.1.0"
+  },
+  "devDependencies": {
+    "axe-core": "^4.4.3",
+    "cypress": "^10.4.0",
+    "cypress-axe": "^1.0.0"
+  }
+}
