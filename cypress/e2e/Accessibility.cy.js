@@ -12,9 +12,15 @@ describe('Accessibility test', () => {
 
   it('Accessing Career button', () => {
     
-    cy.get('#menu-1-a3bcb3e > .menu-item-3661 > .elementor-item').click() //This will run axe against the component with id mentioned
+    cy.get('#menu-1-a3bcb3e > .menu-item-3661 > .elementor-item').click({force:true}) //This will run axe against the component with id mentioned
     cy.wait(5000)
     cy.checkA11y()  
+  })
+
+  it.only ('Accessing Leadership Menu', () => {
+    
+    cy.contains('Leadership').click({force:true}) //This will run axe against the component with id mentioned
+    // cy.checkA11y()  
   })
 
   it('Has no detectable a11y violations on load (filtering to only include critical impact violations)', () => {
